@@ -3,6 +3,7 @@
 // file 'LICENSE.txt', which is part of this source code package.
 
 using System;
+using System.Text.Json.Serialization;
 
 namespace Microsoft.Xna.Framework
 {   
@@ -18,6 +19,7 @@ namespace Microsoft.Xna.Framework
         /// <summary>
         /// The <see cref="Game"/> that owns this <see cref="GameComponent"/>.
         /// </summary>
+        [JsonIgnore]
         public Game Game { get; private set; }
 
         public bool Enabled
